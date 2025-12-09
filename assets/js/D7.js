@@ -84,18 +84,37 @@ console.log("ES.6: nuovo array con numeri incrementati = ", newArray(myArray, 1)
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
-const myArray = ["Ciao", ",", "mi", "chiamo", "Giorgia", "."];
+/* const myArray = ["Ciao", ",", "mi", "chiamo", "Giorgia", "."];
 const lengths = function (array) {
   const stringsLengths = array.map((string) => string.length);
   return stringsLengths;
 };
 
 console.log("ES.7: array di partenza =", myArray);
-console.log("ES.7: array delle lunghezze delle stringhe =", lengths(myArray));
+console.log("ES.7: array delle lunghezze delle stringhe =", lengths(myArray)); */
 
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+
+const onlyUnevenNumbsArray = function () {
+  let numbsArray = [];
+  let unevenNumbsArray = [];
+
+  for (let i = 1; i < 99; i++) {
+    numbsArray.push(i);
+  }
+
+  numbsArray.forEach((number) => {
+    if (number % 2 !== 0) {
+      unevenNumbsArray.push(number);
+    }
+  });
+
+  return unevenNumbsArray;
+};
+
+console.log("ES.8: array dei numeri dispari compresi tra 1 e 99 =", onlyUnevenNumbsArray());
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
