@@ -31,18 +31,36 @@ console.log("ES.2:", arrayOfTenNumbs());
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
 
-const myArray = arrayOfTenNumbs();
+/* const myArray = arrayOfTenNumbs();
 
 const onlyEvenNumbsArray = function (array) {
   return array.filter((number) => number % 2 === 0);
 };
 
 console.log("ES.3: array di partenza =", myArray);
-console.log("ES.3: array di soli numeri pari = ", onlyEvenNumbsArray(myArray));
+console.log("ES.3: array di soli numeri pari = ", onlyEvenNumbsArray(myArray)); */
 
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
+
+// const myArray = arrayOfTenNumbs();
+
+// const sumOfNumbs = function (array) {
+//   let sum = 0;
+//   return array.forEach((number) => (sum = sum + number));
+// };
+
+const myArray = [10, 2, 4, 18];
+
+const sumOfNumbs = function (array) {
+  let sum = 0;
+  myArray.forEach((number) => (sum += number));
+  return sum;
+};
+
+console.log("ES.4: array di partenza =", myArray);
+console.log("ES.4: somma dei numeri dell'array = ", sumOfNumbs(myArray));
 
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
