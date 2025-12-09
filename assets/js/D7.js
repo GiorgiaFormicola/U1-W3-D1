@@ -234,13 +234,16 @@ const movies = [
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
 
-const numbsOfMovies = () => movies.length;
+// const numbsOfMovies = () => movies.length;
 
-console.log("ES.10: il numero di films all'interno dell'array è", numbsOfMovies());
+// console.log("ES.10: il numero di films all'interno dell'array è", numbsOfMovies());
 
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
+
+const onlyTitles = movies.map((movie) => movie.Title);
+console.log("ES.11: i titoli dei films all'interno dell'array sono:", onlyTitles);
 
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
