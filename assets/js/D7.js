@@ -14,7 +14,7 @@ console.log("ES.1:", concatString("Ciao", "ragazzi")); */
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
 
-const arrayOfTenNumbs = () => {
+/* const arrayOfTenNumbs = () => {
   let array = [];
   for (let i = 0; i < 10; i++) {
     let randomNumb = Math.floor(Math.random() * 100 + 1);
@@ -25,7 +25,7 @@ const arrayOfTenNumbs = () => {
   return array;
 };
 
-console.log("ES.2:", arrayOfTenNumbs());
+console.log("ES.2:", arrayOfTenNumbs()); */
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
@@ -51,7 +51,7 @@ console.log("ES.3: array di soli numeri pari = ", onlyEvenNumbsArray(myArray)); 
 //   return array.forEach((number) => (sum = sum + number));
 // };
 
-const myArray = [10, 2, 4, 18];
+/* const myArray = [10, 2, 4, 18];
 
 const sumOfNumbs = function (array) {
   let sum = 0;
@@ -60,7 +60,7 @@ const sumOfNumbs = function (array) {
 };
 
 console.log("ES.4: array di partenza =", myArray);
-console.log("ES.4: somma dei numeri dell'array = ", sumOfNumbs(myArray));
+console.log("ES.4: somma dei numeri dell'array = ", sumOfNumbs(myArray)); */
 
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
@@ -69,6 +69,14 @@ console.log("ES.4: somma dei numeri dell'array = ", sumOfNumbs(myArray));
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
+const myArray = [10, 2, 4, 18];
+
+const newArray = function (array, n) {
+  return array.map((number) => number + n);
+};
+
+console.log("ES.5: array di partenza =", myArray);
+console.log("ES.5: nuovo array con numeri incrementati = ", newArray(myArray, 1));
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
