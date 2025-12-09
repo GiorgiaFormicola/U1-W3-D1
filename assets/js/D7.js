@@ -242,12 +242,15 @@ const movies = [
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
-const onlyTitles = movies.map((movie) => movie.Title);
-console.log("ES.11: i titoli dei films all'interno dell'array sono:", onlyTitles);
+/* const onlyTitles = movies.map((movie) => movie.Title);
+console.log("ES.11: i titoli dei films all'interno dell'array sono:", onlyTitles); */
 
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
+
+const onlyFrom2000 = movies.filter((movie) => movie.Year >= 2000);
+console.log("ES.12: i film usciti nel millennio corrente sono:", onlyFrom2000);
 
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
