@@ -97,7 +97,7 @@ console.log("ES.7: array delle lunghezze delle stringhe =", lengths(myArray)); *
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
 
-const onlyUnevenNumbsArray = function () {
+/* const onlyUnevenNumbsArray = function () {
   let numbsArray = [];
   let unevenNumbsArray = [];
 
@@ -114,7 +114,7 @@ const onlyUnevenNumbsArray = function () {
   return unevenNumbsArray;
 };
 
-console.log("ES.8: array dei numeri dispari compresi tra 1 e 99 =", onlyUnevenNumbsArray());
+console.log("ES.8: array dei numeri dispari compresi tra 1 e 99 =", onlyUnevenNumbsArray()); */
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
@@ -222,9 +222,21 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
+// const oldestFilm = function () {
+//   let years = [];
+//   movies.forEach((movie) => years.push(movie.Year));
+//   const oldestYearIndex = Math.min(...years).length;
+// };
+
+// console.log("ES.9: il film più vecchio è", oldestFilm());
+
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
+
+const numbsOfMovies = () => movies.length;
+
+console.log("ES.10: il numero di films all'interno dell'array è", numbsOfMovies());
 
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
