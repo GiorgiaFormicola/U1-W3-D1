@@ -3,16 +3,29 @@
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
 
-const concatString = (string1, string2) => {
+/* const concatString = (string1, string2) => {
   const finalString = string1.slice(0, 2) + string2.slice(-3, string2.length);
   return finalString.toUpperCase();
 };
 
-console.log(concatString("Ciao", "ragazzi"));
+console.log("ES.1:", concatString("Ciao", "ragazzi")); */
 
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
+
+const arrayOfTenNumbs = () => {
+  let array = [];
+  for (let i = 0; i < 10; i++) {
+    let randomNumb = Math.floor(Math.random() * 100 + 1);
+    // console.log(randomNumb);
+    array.push(randomNumb);
+    // console.log(arrayOfRandomNumbers);
+  }
+  return array;
+};
+
+console.log("ES.2:", arrayOfTenNumbs());
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
