@@ -222,21 +222,27 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
-// const oldestFilm = function () {
-//   let years = [];
-//   movies.forEach((movie) => years.push(movie.Year));
-//   const oldestYearIndex = Math.min(...years).length;
-// };
+const oldestFilm = function () {
+  let oldestMovie = movies[0];
 
-// console.log("ES.9: il film più vecchio è", oldestFilm());
+  movies.forEach((movie) => {
+    if (movie.Year < oldestMovie.Year) {
+      oldestMovie = movie;
+    }
+  });
+
+  return oldestMovie;
+};
+
+console.log("ES.9: il film più vecchio è", oldestFilm());
 
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
 
-// const numbsOfMovies = () => movies.length;
+/* const numbsOfMovies = () => movies.length;
 
-// console.log("ES.10: il numero di films all'interno dell'array è", numbsOfMovies());
+console.log("ES.10: il numero di films all'interno dell'array è", numbsOfMovies()); */
 
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
@@ -249,8 +255,8 @@ console.log("ES.11: i titoli dei films all'interno dell'array sono:", onlyTitles
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 
-const onlyFrom2000 = movies.filter((movie) => movie.Year >= 2000);
-console.log("ES.12: i film usciti nel millennio corrente sono:", onlyFrom2000);
+/* const onlyFrom2000 = movies.filter((movie) => movie.Year >= 2000);
+console.log("ES.12: i film usciti nel millennio corrente sono:", onlyFrom2000); */
 
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
