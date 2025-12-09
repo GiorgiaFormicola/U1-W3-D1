@@ -69,19 +69,29 @@ console.log("ES.4: somma dei numeri dell'array = ", sumOfNumbs(myArray)); */
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
-const myArray = [10, 2, 4, 18];
+
+/* const myArray = [10, 2, 4, 18];
 
 const newArray = function (array, n) {
   return array.map((number) => number + n);
 };
 
-console.log("ES.5: array di partenza =", myArray);
-console.log("ES.5: nuovo array con numeri incrementati = ", newArray(myArray, 1));
+console.log("ES.6: array di partenza =", myArray);
+console.log("ES.6: nuovo array con numeri incrementati = ", newArray(myArray, 1)); */
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
+
+const myArray = ["Ciao", ",", "mi", "chiamo", "Giorgia", "."];
+const lengths = function (array) {
+  const stringsLengths = array.map((string) => string.length);
+  return stringsLengths;
+};
+
+console.log("ES.7: array di partenza =", myArray);
+console.log("ES.7: array delle lunghezze delle stringhe =", lengths(myArray));
 
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
