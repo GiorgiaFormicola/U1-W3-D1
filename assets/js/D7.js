@@ -270,11 +270,11 @@ console.log("ES.12: i film usciti nel millennio corrente sono:", onlyFrom2000(mo
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
 
-const getSumOfYears = function (array) {
+/* const getSumOfYears = function (array) {
   return array.reduce((accumulator, movie) => accumulator + parseInt(movie.Year), 0);
 };
 
-console.log("ES.13: la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array è", getSumOfYears(movies) + " anni");
+console.log("ES.13: la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array è", getSumOfYears(movies) + " anni"); */
 
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
