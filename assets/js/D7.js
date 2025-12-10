@@ -222,10 +222,10 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
-const oldestFilm = function () {
-  let oldestMovie = movies[0];
+/* const oldestFilm = function (array) {
+  let oldestMovie = array[0];
 
-  movies.forEach((movie) => {
+  array.forEach((movie) => {
     if (movie.Year < oldestMovie.Year) {
       oldestMovie = movie;
     }
@@ -234,29 +234,34 @@ const oldestFilm = function () {
   return oldestMovie;
 };
 
-console.log("ES.9: il film più vecchio è", oldestFilm());
+console.log("ES.9: il film più vecchio è", oldestFilm(movies)); */
 
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
 
-/* const numbsOfMovies = () => movies.length;
+/* const numbsOfMovies = (array) => array.length;
 
-console.log("ES.10: il numero di films all'interno dell'array è", numbsOfMovies()); */
+console.log("ES.10: il numero di films all'interno dell'array è", numbsOfMovies(movies)); */
 
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
-/* const onlyTitles = movies.map((movie) => movie.Title);
-console.log("ES.11: i titoli dei films all'interno dell'array sono:", onlyTitles); */
+/* const onlyTitles = function (array) {
+  return array.map((movie) => movie.Title);
+};
+console.log("ES.11: i titoli dei films all'interno dell'array sono:", onlyTitles(movies)); */
 
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 
-/* const onlyFrom2000 = movies.filter((movie) => movie.Year >= 2000);
-console.log("ES.12: i film usciti nel millennio corrente sono:", onlyFrom2000); */
+/* const onlyFrom2000 = function (array) {
+  return array.filter((movie) => movie.Year >= 2000);
+};
+
+console.log("ES.12: i film usciti nel millennio corrente sono:", onlyFrom2000(movies)); */
 
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
