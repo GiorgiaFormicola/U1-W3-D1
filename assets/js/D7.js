@@ -59,7 +59,7 @@ console.log("ES.4: somma dei numeri dell'array = ", sumOfNumbs(myArray)); */
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
-const myArray = [10, 2, 4, 18];
+/* const myArray = [10, 2, 4, 18];
 
 const sumOfNumbs = function (array) {
   return array.reduce((accumulator, currentObj) => accumulator + currentObj, 0);
@@ -67,6 +67,7 @@ const sumOfNumbs = function (array) {
 
 console.log("ES.5: array di partenza =", myArray);
 console.log("ES.5: somma dei numeri dell'array = ", sumOfNumbs(myArray));
+ */
 
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
@@ -268,6 +269,12 @@ console.log("ES.12: i film usciti nel millennio corrente sono:", onlyFrom2000(mo
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
+
+const getSumOfYears = function (array) {
+  return array.reduce((accumulator, movie) => accumulator + parseInt(movie.Year), 0);
+};
+
+console.log("ES.13: la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array è", getSumOfYears(movies) + " anni");
 
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
