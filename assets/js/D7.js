@@ -44,13 +44,6 @@ console.log("ES.3: array di soli numeri pari = ", onlyEvenNumbsArray(myArray)); 
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
-// const myArray = arrayOfTenNumbs();
-
-// const sumOfNumbs = function (array) {
-//   let sum = 0;
-//   return array.forEach((number) => (sum = sum + number));
-// };
-
 /* const myArray = [10, 2, 4, 18];
 
 const sumOfNumbs = function (array) {
@@ -65,6 +58,15 @@ console.log("ES.4: somma dei numeri dell'array = ", sumOfNumbs(myArray)); */
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
+
+const myArray = [10, 2, 4, 18];
+
+const sumOfNumbs = function (array) {
+  return array.reduce((accumulator, currentObj) => accumulator + currentObj, 0);
+};
+
+console.log("ES.5: array di partenza =", myArray);
+console.log("ES.5: somma dei numeri dell'array = ", sumOfNumbs(myArray));
 
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
@@ -281,8 +283,8 @@ console.log("ES.14", getMovie(movies, "tt0057261")); */
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
 
-const getFilmIndex = function (array, year) {
+/* const getFilmIndex = function (array, year) {
   return array.findIndex((movie) => movie.Year == year);
 };
 
-console.log("ES.15", getFilmIndex(movies, 2005));
+console.log("ES.15", getFilmIndex(movies, 2005)); */
