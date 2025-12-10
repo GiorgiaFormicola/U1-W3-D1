@@ -271,12 +271,18 @@ console.log("ES.12: i film usciti nel millennio corrente sono:", onlyFrom2000(mo
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
-const getMovie = function (array, id) {
+/* const getMovie = function (array, id) {
   return array.find((movie) => movie.imdbID === id);
 };
 
-console.log("ES.14", getMovie(movies, "tt0057261"));
+console.log("ES.14", getMovie(movies, "tt0057261")); */
 
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
+
+const getFilmIndex = function (array, year) {
+  return array.findIndex((movie) => movie.Year == year);
+};
+
+console.log("ES.15", getFilmIndex(movies, 2005));
